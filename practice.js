@@ -1,0 +1,2 @@
+// * FOR LOOPS PRACTICE 
+// * EXAMPLE 1 
