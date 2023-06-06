@@ -1,0 +1,7 @@
+input[type="radio"] {
+    appearance: none;
+    height: 1.15rem;
+    width: 1.15rem;
+    border: 0.15rem solid currentColor;
+    border-radius: 50%;
+}
