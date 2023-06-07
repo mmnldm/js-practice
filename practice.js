@@ -62,3 +62,34 @@ bb.forEach(function(word, i, arr) {
 })
 
 console.log(bb.join(' '));
+
+let arr = ['brown', 'white', 'black', 'green', 'orange',];
+
+arr.forEach(function(element, i, arr1) {
+    arr1[i] = element[0].toUpperCase() + element.slice(1); 
+});
+
+console.log(arr);
+
+String.prototype.toJadenCase = function() {
+    // let newWord = words.split(' ');
+
+    //  newWord.forEach(function(word, index, array) {
+    //     array[index] = word[0].toUpperCase() + word.slice(1);
+    // })
+    // newWord.join(' ');
+
+    const words = this.split(' ');
+
+    words.forEach(function(word, index, array) {
+        array[index] = word[0].toUpperCase() + word.slice(1);
+    })
+
+    const jadenString = words.join(' ');
+
+    return jadenString;
+
+}
+
+let bounce = 'whatever you do let it bounce nigga';
+console.log(bounce.toJadenCase());
