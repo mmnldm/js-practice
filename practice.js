@@ -9,10 +9,6 @@ for(let i = 0; i < nameArrays.length; i++){
 }
 
 // ! EVENT TARGET
-const btn = document.getElementById('btn');
-btn.addEventListener('click', (e) => {
-    console.log(e.target)
-})
 
 
 //* FIND THE SHORTEST WORD IN THE STRING
@@ -72,13 +68,6 @@ arr.forEach(function(element, i, arr1) {
 console.log(arr);
 
 String.prototype.toJadenCase = function() {
-    // let newWord = words.split(' ');
-
-    //  newWord.forEach(function(word, index, array) {
-    //     array[index] = word[0].toUpperCase() + word.slice(1);
-    // })
-    // newWord.join(' ');
-
     const words = this.split(' ');
 
     words.forEach(function(word, index, array) {
@@ -93,3 +82,32 @@ String.prototype.toJadenCase = function() {
 
 let bounce = 'whatever you do let it bounce nigga';
 console.log(bounce.toJadenCase());
+
+
+// * FOR EACH LOOP
+
+let bog = [
+{title: 'Call mama', description: 'Call mama and tell her you miss her', tags: 'family'},{title: 'New music', description: 'Listen to frank ocean new leak', tags: 'entertainment'}];
+
+bog.forEach(element => {
+    console.log(element.title);
+    console.log(element.description);
+})
+
+// * SPREAD OPERATOR
+
+
+//* ODD NUMBER
+function findOdd(A) {
+
+}
+
+// * ANAGRAM COMPATIBLE
+function anagram(original, dup){
+    let o = original.toLowerCase().split('').sort().join('');
+    let d = dup.toLowerCase().split('').sort().join('');
+
+    return o === d ? true : false
+}
+
+console.log(anagram('fried','defri'));
